@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Book a sports turf slot quickly by WhatsApp or phone."
+    />
+    <meta name="theme-color" content="#0a0d0b" />
+    <title>Sports Turf Booking</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="popup-image.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Go to home"
+        ><span class="brand-mark">TX</span
+        ><span data-business-name>TurfX Arena</span></a
+      >
+      <button
+        class="menu-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span></span><span></span>
+      </button>
+      <nav id="main-nav">
+        <a href="#home">Home</a><a href="#facilities">Facilities</a
+        ><a href="#gallery">Gallery</a><a href="#location">Location</a
+        ><a href="#contact">Contact</a>
+      </nav>
+      <a class="button button-small book-link" href="#contact"
+        >Book a Slot <span>→</span></a
+      >
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <img
+          src="assets/turf-hero.png"
+          alt="Illustrative floodlit football turf"
+          fetchpriority="high"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-content container">
+          <h1>Your Game.<br /><em>Your Turf.</em><br />Your Time.</h1>
+          <p class="hero-copy">
+            A simple way to enquire about your next
+            <span data-sport>[FOOTBALL / CRICKET / BOTH]</span> session. Message
+            us to check timings and make a booking enquiry.
+          </p>
+          <div class="hero-actions">
+            <a class="button whatsapp-link" href="#contact"
+              >Book Your Slot <span>↗</span></a
+            ><a class="text-link directions-link" href="#location"
+              >Get Directions <span>→</span></a
+            >
+          </div>
+        </div>
+        <a class="scroll-cue" href="#benefits"
+          >Scroll to explore <span>↓</span></a
+        >
+      </section>
+
+      <section class="benefits section container" id="benefits">
+        <div class="section-intro">
+          <p class="eyebrow green"><i></i>Designed for game day</p>
+          <h2>Play more.<br />Plan less.</h2>
+        </div>
+        <div class="benefit-grid">
+          <article>
+            <span class="line-icon">⌁</span>
+            <h3>Easy enquiries</h3>
+            <p>
+              Send us a quick WhatsApp message to ask about slots, timings and
+              pricing.
+            </p>
+          </article>
+          <article>
+            <span class="line-icon">◷</span>
+            <h3>Built around you</h3>
+            <p>
+              Ask us about a slot that works for your team, group or individual
+              session.
+            </p>
+          </article>
+          <article>
+            <span class="line-icon">⌖</span>
+            <h3>Find us easily</h3>
+            <p>
+              Get directions directly from the page once the map link is
+              configured.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="facilities section" id="facilities">
+        <div class="container">
+          <div class="split-heading">
+            <div>
+              <p class="eyebrow green"><i></i>The arena</p>
+              <h2>Everything you need<br />to play your best.</h2>
+            </div>
+            <p>
+              These tiles are ready for the real amenities at your venue. Update
+              them in one place when your details are confirmed.
+            </p>
+          </div>
+          <div class="facility-grid" id="facility-grid"></div>
+        </div>
+      </section>
+
+      <section class="gallery section container" id="gallery">
+        <div class="gallery-heading">
+          <div>
+            <p class="eyebrow green"><i></i>Inside the turf</p>
+            <h2>The place for<br />your next game.</h2>
+          </div>
+          <p class="gallery-note">
+            Illustrative images — replace these with your actual turf photos
+            before launch.
+          </p>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </section>
+
+      <section class="booking section" id="contact">
+        <div class="container booking-box">
+          <div>
+            <p class="eyebrow green"><i></i>Ready when you are</p>
+            <h2>Get in the<br /><em>game.</em></h2>
+            <p>
+              Want the latest timings and prices? Start an enquiry directly with
+              the team — no account needed.
+            </p>
+          </div>
+          <div class="booking-panel">
+            <p class="availability">BOOKING ENQUIRY</p>
+            <h3>Let's find your slot.</h3>
+            <p id="pricing-copy">
+              Contact us for pricing and available timings.
+            </p>
+            <a class="button whatsapp-link" href="#"
+              >WhatsApp Us <span>↗</span></a
+            ><a class="call-link phone-link" href="#"
+              >or call <span data-phone>[YOUR PHONE NUMBER]</span> →</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="location section container" id="location">
+        <div class="location-card">
+          <div>
+            <p class="eyebrow green"><i></i>Come play</p>
+            <h2>Find your<br />home ground.</h2>
+            <address>
+              <strong data-business-name>TurfX Arena</strong
+              ><span data-address>[YOUR TURF ADDRESS, CITY]</span
+              ><span
+                ><b>Hours</b>
+                <span data-hours>[OPENING AND CLOSING HOURS]</span></span
+              >
+            </address>
+            <a class="text-link directions-link" href="#"
+              >Open in Google Maps <span>↗</span></a
+            >
+          </div>
+          <div class="map-art" aria-hidden="true">
+            <span>YOUR<br />TURF</span><i class="pin">●</i>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq section container">
+        <div class="faq-layout">
+          <div>
+            <p class="eyebrow green"><i></i>Need to know</p>
+            <h2>Questions,<br />answered.</h2>
+          </div>
+          <div class="accordion">
+            <details open>
+              <summary>How do I book a turf slot?<span>+</span></summary>
+              <p>
+                Use the WhatsApp button or call us to enquire. A booking is
+                confirmed only after the team confirms it with you.
+              </p>
+            </details>
+            <details>
+              <summary>What are the available timings?<span>+</span></summary>
+              <p>Please contact us for the current timings and availability.</p>
+            </details>
+            <details>
+              <summary>How much does a booking cost?<span>+</span></summary>
+              <p>
+                Contact us for current pricing and any applicable booking
+                conditions.
+              </p>
+            </details>
+            <details>
+              <summary>Can I book for a group or team?<span>+</span></summary>
+              <p>
+                Let us know your requirement on WhatsApp or phone and the team
+                can guide you.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="container">
+          <p class="eyebrow">
+            <i></i><span data-city>[YOUR CITY / NEIGHBOURHOOD]</span>
+          </p>
+          <h2>Your next match<br />starts <em>here.</em></h2>
+          <div class="hero-actions">
+            <a class="button whatsapp-link" href="#"
+              >Book Your Slot <span>↗</span></a
+            ><a class="text-link phone-link" href="#">Call Us <span>→</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <a class="brand" href="#home"
+          ><span class="brand-mark">TX</span
+          ><span data-business-name>[YOUR TURF NAME]</span></a
+        >
+        <div>
+          <p data-address>[YOUR TURF ADDRESS, CITY]</p>
+          <a class="phone-link" href="#" data-phone>[YOUR PHONE NUMBER]</a>
+        </div>
+        <p>
+          © <span id="year"></span>
+          <span data-business-name>[YOUR TURF NAME]</span>. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <div class="mobile-bar">
+      <a class="phone-link" href="#">Call</a
+      ><a class="whatsapp-link" href="#">WhatsApp <span>↗</span></a>
+    </div>
+    <dialog id="lightbox">
+      <button aria-label="Close image">×</button><img alt="" />
+    </dialog>
+    <dialog
+      class="promo-modal"
+      id="promo-modal"
+      aria-label="Special booking offer"
+    >
+      <button
+        class="promo-close"
+        type="button"
+        aria-label="Close discount offer"
+      >
+        ×
+      </button>
+      <a
+        class="promo-card whatsapp-link"
+        href="#contact"
+        aria-label="Open WhatsApp"
+      >
+        <img
+          class="popup-image"
+          src="assets/popup.webp"
+          alt="Special turf booking offer. Tap to contact us on WhatsApp."
+        />
+      </a>
+    </dialog>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

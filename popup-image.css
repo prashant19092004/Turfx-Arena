@@ -1,0 +1,2 @@
+/* Single-image WhatsApp popup */
+.promo-modal{width:min(92vw,510px)}.promo-card{line-height:0;background:transparent}.popup-image{display:block;width:100%;height:auto;max-height:82vh;object-fit:contain}.promo-close{top:-13px!important;right:-13px!important}@media(max-width:480px){.popup-image{max-height:78vh}}
