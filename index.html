@@ -278,7 +278,7 @@ function gtag_report_conversion(url) {
       <a class="phone-link" href="#">Call</a
       ><a class="whatsapp-link" href="#">WhatsApp <span>↗</span></a>
     </div>
-    <dialog id="lightbox">
+    <!-- <dialog id="lightbox">
       <button aria-label="Close image">×</button><img alt="" />
     </dialog>
     <dialog
@@ -309,7 +309,38 @@ function gtag_report_conversion(url) {
           alt="Special turf booking offer. Tap to contact us on WhatsApp."
         />
       </a>
-    </dialog>
+    </dialog> -->
+
+    <div
+      class="promo-overlay"
+      id="promoOverlay"
+      role="dialog"
+      aria-modal="true"
+      aria-label="WhatsApp offer banner"
+      aria-hidden="true"
+    >
+      <div class="promo-modal promo-banner-modal">
+        <button class="promo-close" id="promoClose" aria-label="Close offer">
+          ×</button
+        ><a
+          class="promo-banner-link"
+          href="https://wa.me/9835307159?text=Hi,%20I%20want%20Id."
+          onclick="
+            return gtag_report_conversion(
+              'https://wa.me/9835307159?text=Hi,%20I%20want%20Id.'
+            );
+          "
+          id="promoBook"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open WhatsApp offer"
+          ><img
+             class="popup-image"
+            src="assets/popup.webp"
+            alt="Special turf booking offer. Tap to contact us on WhatsApp."
+        /></a>
+      </div>
+    </div>
     <script src="config.js"></script>
     <script src="script.js"></script>
   </body>
