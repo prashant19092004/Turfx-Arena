@@ -137,17 +137,12 @@ function closePromo() {
 }
 
 if (promo) {
-  // if (promoBook) {
-  //   const defaultOfferLink = 'https://wa.me/9835307159?text=Hi,%20I%20want%20Id.';
-  //   const offerLink = valid(config.whatsapp)
-  //     ? `https://wa.me/${config.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent('Hi, I would like to enquire about the current turf offer.')}`
-  //     : defaultOfferLink;
-
-  //   promoBook.href = offerLink;
-  //   promoBook.setAttribute('target', '_blank');
-  //   promoBook.setAttribute('rel', 'noopener');
-  //   promoBook.addEventListener('click', closePromo);
-  // }
+  if (promoBook) {
+    promoBook.addEventListener('click', event => {
+      event.preventDefault();
+      closePromo();
+    });
+  }
 
   if (promoClose) {
     promoClose.addEventListener('click', event => {
