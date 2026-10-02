@@ -294,7 +294,11 @@ function gtag_report_conversion(url) {
         ><a
           class="promo-banner-link"
           href="#"
-          href=""
+           onclick="
+            return gtag_report_conversion(
+              'https://wa.me/9835307159?text=Hi,%20I%20want%20Id.'
+            );
+          "
           id="promoBook"
           target="_blank"
           rel="noopener"
