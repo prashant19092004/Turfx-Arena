@@ -19,21 +19,52 @@
   // document.getElementById('facility-grid').innerHTML = c.facilities.map(f => `<article class="facility"><span>${f.icon}</span><h3>${f.title}</h3><p>${f.description}</p></article>`).join('');
   const grid = document.getElementById('gallery-grid');
   grid.innerHTML = c.gallery.map((item, i) => `<button class="gallery-item item-${i}" type="button"><img src="${item.src}" alt="${item.alt}" loading="lazy" /><span>View image ↗</span></button>`).join('');
-  const dialog = document.getElementById('lightbox');
-  grid.querySelectorAll('button').forEach((button, i) => button.addEventListener('click', () => { const image = dialog.querySelector('img'); image.src = c.gallery[i].src; image.alt = c.gallery[i].alt; dialog.showModal(); }));
-  dialog.querySelector('button').addEventListener('click', () => dialog.close());
-  dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
-  const promo = document.getElementById('promo-modal');
-  if (c.showDiscountPopup) {
-    window.setTimeout(() => promo.showModal(), 350);
-    promo.querySelector('.promo-close').addEventListener('click', event => { event.preventDefault(); event.stopPropagation(); promo.close(); });
-    // promo.addEventListener('click', event => {
-    //   if (event.target.closest('.promo-close') || event.target.closest('.promo-card')) return;
-    //   window.location.assign(whatsUrl);
-    // });
-  }
+  // const dialog = document.getElementById('lightbox');
+  // grid.querySelectorAll('button').forEach((button, i) => button.addEventListener('click', () => { const image = dialog.querySelector('img'); image.src = c.gallery[i].src; image.alt = c.gallery[i].alt; dialog.showModal(); }));
+  // dialog.querySelector('button').addEventListener('click', () => dialog.close());
+  // dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
+  // const promo = document.getElementById('promo-modal');
+  // if (c.showDiscountPopup) {
+  //   window.setTimeout(() => promo.showModal(), 350);
+  //   promo.querySelector('.promo-close').addEventListener('click', event => { event.preventDefault(); event.stopPropagation(); promo.close(); });
+  //   // promo.addEventListener('click', event => {
+  //   //   if (event.target.closest('.promo-close') || event.target.closest('.promo-card')) return;
+  //   //   window.location.assign(whatsUrl);
+  //   // });
+  // }
   const toggle = document.querySelector('.menu-toggle'), nav = document.querySelector('nav');
   toggle.addEventListener('click', () => { const open = toggle.getAttribute('aria-expanded') === 'true'; toggle.setAttribute('aria-expanded', !open); nav.classList.toggle('open', !open); });
   nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { toggle.setAttribute('aria-expanded', 'false'); nav.classList.remove('open'); }));
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
+
+const promo = $("#promoOverlay");
+const promoClose = $("#promoClose");
+let lastFocused;
+function openPromo() {
+  lastFocused = document.activeElement;
+  promo.classList.add("show");
+  promo.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+  setTimeout(() => promoClose.focus(), 50);
+}
+function closePromo() {
+  promo.classList.remove("show");
+  promo.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-open");
+  if (lastFocused) lastFocused.focus();
+}
+setTimeout(openPromo, 800);
+promoClose.addEventListener("click", closePromo);
+$("#promoBook").addEventListener("click", closePromo);
+promo.addEventListener("click", event => { if (event.target === promo) closePromo(); });
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape" && promo.classList.contains("show")) closePromo();
+  if (event.key === "Tab" && promo.classList.contains("show")) {
+    const focusable = $$("button, a", promo);
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+  }
+});
