@@ -3,28 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d47a1" />
+    <title>
+      Sonu Electronics | Expert Home Appliance Repair at Your Doorstep
+    </title>
     <meta
       name="description"
-      content="Book a sports turf slot quickly by WhatsApp or phone."
+      content="Fast, reliable doorstep repair for TVs, ACs, refrigerators, washing machines and electrical appliances. Certified technicians, genuine spares and repair warranty."
     />
-    <meta name="theme-color" content="#0a0d0b" />
-    <title>Sports Turf Booking</title>
-    <link rel="preconnect" href="https://images.unsplash.com" />
+    <meta
+      name="keywords"
+      content="electronics repair, TV repair, AC service, refrigerator repair, washing machine repair, appliance repair near me, electrician"
+    />
+    <link rel="canonical" href="https://www.example.com/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Sonu Electronics — Trusted Home Electronics Service Partner"
+    />
+    <meta
+      property="og:description"
+      content="Professional appliance repair and installation at your doorstep."
+    />
+    <meta property="og:url" content="https://www.example.com/" />
+    <meta
+      property="og:image"
+      content="https://www.example.com/assets/images/hero-technician.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Sonu Electronics — Doorstep Appliance Repair"
+    />
+    <meta
+      name="twitter:description"
+      content="Book fast, reliable home appliance repair by certified technicians."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.example.com/assets/images/hero-technician.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/hero-technician.png"
+      fetchpriority="high"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="popup.css" />
-    <link rel="stylesheet" href="popup-image.css" />
-
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Sonu Electronics",
+        "image": "https://www.example.com/assets/images/hero-technician.png",
+        "description": "Doorstep repair and installation services for home electronic appliances.",
+        "telephone": "+91-98765-43210",
+        "email": "service@sonuelectronics.in",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Your Service Area",
+          "addressLocality": "Your City",
+          "addressRegion": "Your State",
+          "postalCode": "000000",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "08:00",
+            "closes": "21:00"
+          }
+        ],
+        "priceRange": "₹₹",
+        "url": "https://www.example.com/"
+      }
+    </script>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18487777589"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18491016760"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'AW-18487777589');
+  gtag('config', 'AW-18491016760');
 </script>
 
-    <!-- Event snippet for Outbound click (7) conversion page
+    <!-- Event snippet for Outbound click conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion(url) {
@@ -34,7 +113,7 @@ function gtag_report_conversion(url) {
     }
   };
   gtag('event', 'conversion', {
-      'send_to': 'AW-18487777589/C2jVCNn5vI4dELWy1O9E',
+      'send_to': 'AW-18491016760/GZuyCP7mwI4dELiMmvFE',
       'value': 1.0,
       'currency': 'INR',
       'event_callback': callback
@@ -43,242 +122,647 @@ function gtag_report_conversion(url) {
 }
 </script>
 
-
-
+    
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="Go to home"
-        ><span class="brand-mark">TX</span
-        ><span data-business-name>TurfX Arena</span></a
-      >
-      <button
-        class="menu-toggle"
-        aria-label="Open menu"
-        aria-expanded="false"
-        aria-controls="main-nav"
-      >
-        <span></span><span></span>
-      </button>
-      <nav id="main-nav">
-        <a href="#home">Home</a><a href="#facilities">Facilities</a
-        ><a href="#gallery">Gallery</a><a href="#location">Location</a
-        ><a href="#contact">Contact</a>
-      </nav>
-      <a class="button button-small book-link" href="#contact"
-        >Book a Slot <span>→</span></a
-      >
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader-mark"><span>S</span></div>
+    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-wrap">
+        <a class="logo" href="#home" aria-label="Sonu Electronics home"
+          ><span class="logo-mark">S</span
+          ><span
+            >Sonu <strong>Electronics</strong
+            ><small>We fix. You relax.</small></span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+          <a class="active" href="#home">Home</a><a href="#services">Services</a
+          ><a href="#why-us">Why us</a><a href="#reviews">Reviews</a
+          ><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+        </nav>
+        <a class="btn btn-primary nav-cta" href="#contact"
+          >Book Service <span>→</span></a
+        >
+      </div>
     </header>
 
-    <main>
+    <main id="main">
       <section class="hero" id="home">
-        <img
-          src="assets/turf-hero.png"
-          alt="Illustrative floodlit football turf"
-          fetchpriority="high"
-        />
-        <div class="hero-shade"></div>
-        <div class="hero-content container">
-          <h1>Your Game.<br /><em>Your Turf.</em><br />Your Time.</h1>
-          <p class="hero-copy">
-            A simple way to enquire about your next
-            <span data-sport>[FOOTBALL / CRICKET / BOTH]</span> session. Message
-            us to check timings and make a booking enquiry.
-          </p>
-          <div class="hero-actions">
-            <a class="button whatsapp-link" href="#contact"
-              >Book Your Slot <span>↗</span></a
-            ><a class="text-link directions-link" href="#location"
-              >Get Directions <span>→</span></a
-            >
+        <div
+          class="hero-bg"
+          role="img"
+          aria-label="Professional technician repairing a television at home"
+        ></div>
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <div class="eyebrow light">
+              <span class="status-dot"></span> Trusted by 5,000+ homes
+            </div>
+            <h1>
+              Professional Electronics Repair <span>at Your Doorstep</span>
+            </h1>
+            <p class="hero-lead">
+              Fast, reliable repairs for
+              <span id="typedText" aria-live="polite">LED TV</span
+              ><span class="type-cursor" aria-hidden="true"></span>
+            </p>
+            <div class="hero-actions">
+              <a
+                class="btn btn-whatsapp"
+                href="https://wa.me/7667368281?text=Hi,%20I%20want%20Id."
+                target="_blank"
+                rel="noopener"
+                ><span>◉</span> Book on WhatsApp</a
+              >
+              <a class="btn btn-glass" href="#"><span>☎</span> Call Now</a>
+            </div>
+            <div class="trust-row">
+              <span><b>✓</b> Same Day Service</span
+              ><span><b>✓</b> Certified Technicians</span
+              ><span><b>✓</b> Genuine Spare Parts</span>
+            </div>
           </div>
         </div>
-        <a class="scroll-cue" href="#benefits"
-          >Scroll to explore <span>↓</span></a
-        >
-      </section>
-
-      <section class="benefits section container" id="benefits">
-        <div class="section-intro">
-          <p class="eyebrow green"><i></i>Designed for game day</p>
-          <h2>Play more.<br />Plan less.</h2>
-        </div>
-        <div class="benefit-grid">
-          <article>
-            <span class="line-icon">⌁</span>
-            <h3>Easy enquiries</h3>
-            <p>
-              Send us a quick WhatsApp message to ask about slots, timings and
-              pricing.
-            </p>
-          </article>
-          <article>
-            <span class="line-icon">◷</span>
-            <h3>Built around you</h3>
-            <p>
-              Ask us about a slot that works for your team, group or individual
-              session.
-            </p>
-          </article>
-          <article>
-            <span class="line-icon">⌖</span>
-            <h3>Find us easily</h3>
-            <p>
-              Get directions directly from the page once the map link is
-              configured.
-            </p>
-          </article>
+        <div class="hero-rating">
+          <span class="rating-icon">★</span>
+          <div><b>4.9/5</b><small>Customer rating</small></div>
+          <div class="stars">★★★★★</div>
         </div>
       </section>
 
-      <section class="facilities section" id="facilities">
+      <section class="quick-strip" aria-label="Service benefits">
+        <div class="container quick-grid">
+          <div>
+            <span class="mini-icon">⚡</span>
+            <p><strong>30–60 Min</strong><small>Rapid response</small></p>
+          </div>
+          <div>
+            <span class="mini-icon">🛡</span>
+            <p><strong>Up to 90 Days</strong><small>Service warranty</small></p>
+          </div>
+          <div>
+            <span class="mini-icon">₹</span>
+            <p>
+              <strong>Transparent Price</strong><small>No hidden charges</small>
+            </p>
+          </div>
+          <div>
+            <span class="mini-icon">⌂</span>
+            <p>
+              <strong>Doorstep Visit</strong><small>At your convenience</small>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
         <div class="container">
-          <div class="split-heading">
+          <div class="section-head reveal">
             <div>
-              <p class="eyebrow green"><i></i>The arena</p>
-              <h2>Everything you need<br />to play your best.</h2>
+              <p class="eyebrow">What we repair</p>
+              <h2>Every appliance. <span>One trusted team.</span></h2>
             </div>
             <p>
-              These tiles are ready for the real amenities at your venue. Update
-              them in one place when your details are confirmed.
+              From everyday fixes to complex installations, our specialists
+              restore comfort to your home quickly.
             </p>
           </div>
-          <div class="facility-grid" id="facility-grid"></div>
-        </div>
-      </section>
-
-      <section class="gallery section container" id="gallery">
-        <div class="gallery-heading">
-          <div>
-            <p class="eyebrow green"><i></i>Inside the turf</p>
-            <h2>The place for<br />your next game.</h2>
+          <div class="services-grid">
+            <article class="service-card featured reveal">
+              <div class="service-icon">▣</div>
+              <div>
+                <h3>LED TV Repair</h3>
+                <p>
+                  Screen, sound, motherboard and power issues fixed at home.
+                </p>
+              </div>
+              <a href="#contact" aria-label="Book LED TV repair">→</a
+              ><span class="popular">Most booked</span>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">▤</div>
+              <div>
+                <h3>Smart TV Installation</h3>
+                <p>Safe wall mounting, setup and picture calibration.</p>
+              </div>
+              <a href="#contact" aria-label="Book Smart TV installation">→</a>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">❄</div>
+              <div>
+                <h3>AC Repair & Installation</h3>
+                <p>Cooling, gas refill, servicing and new installations.</p>
+              </div>
+              <a href="#contact" aria-label="Book AC service">→</a>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">▥</div>
+              <div>
+                <h3>Refrigerator Repair</h3>
+                <p>Cooling, compressor, leakage and thermostat repairs.</p>
+              </div>
+              <a href="#contact" aria-label="Book refrigerator repair">→</a>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">◉</div>
+              <div>
+                <h3>Washing Machine</h3>
+                <p>Drum, motor, drainage and control panel solutions.</p>
+              </div>
+              <a href="#contact" aria-label="Book washing machine repair">→</a>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">▦</div>
+              <div>
+                <h3>Microwave Repair</h3>
+                <p>Heating, display and turntable issues diagnosed fast.</p>
+              </div>
+              <a href="#contact" aria-label="Book microwave repair">→</a>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">♒</div>
+              <div>
+                <h3>RO Purifier Service</h3>
+                <p>Filter changes, leakage fixes and deep maintenance.</p>
+              </div>
+              <a href="#contact" aria-label="Book RO purifier service">→</a>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">♨</div>
+              <div>
+                <h3>Geyser Repair</h3>
+                <p>Heating element, thermostat and leakage repairs.</p>
+              </div>
+              <a href="#contact" aria-label="Book geyser repair">→</a>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">⌁</div>
+              <div>
+                <h3>Inverter Repair</h3>
+                <p>Battery, charging and backup fault resolution.</p>
+              </div>
+              <a href="#contact" aria-label="Book inverter repair">→</a>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">◉</div>
+              <div>
+                <h3>CCTV Installation</h3>
+                <p>Camera installation, remote access and maintenance.</p>
+              </div>
+              <a href="#contact" aria-label="Book CCTV installation">→</a>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">ϟ</div>
+              <div>
+                <h3>Electrical Repair</h3>
+                <p>Switches, sockets, MCBs and electrical faults.</p>
+              </div>
+              <a href="#contact" aria-label="Book electrical repair">→</a>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">⌘</div>
+              <div>
+                <h3>Home Wiring</h3>
+                <p>Safe new wiring, rewiring and load distribution.</p>
+              </div>
+              <a href="#contact" aria-label="Book home wiring service">→</a>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">✣</div>
+              <div>
+                <h3>Fan Repair</h3>
+                <p>Motor, regulator, bearing and installation service.</p>
+              </div>
+              <a href="#contact" aria-label="Book fan repair">→</a>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">❉</div>
+              <div>
+                <h3>Cooler Repair</h3>
+                <p>Pump, motor, fan and cooling pad replacement.</p>
+              </div>
+              <a href="#contact" aria-label="Book cooler repair">→</a>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">↟</div>
+              <div>
+                <h3>Water Pump Repair</h3>
+                <p>Motor repair, installation and water-flow solutions.</p>
+              </div>
+              <a href="#contact" aria-label="Book water pump repair">→</a>
+            </article>
           </div>
-          <p class="gallery-note">
-            Illustrative images — replace these with your actual turf photos
-            before launch.
+          <p class="service-note">
+            Can't find your appliance?
+            <a href="tel:+919876543210">Call us — we probably fix it.</a>
           </p>
         </div>
-        <div class="gallery-grid" id="gallery-grid"></div>
       </section>
 
-      <section class="booking section" id="contact">
-        <div class="container booking-box">
-          <div>
-            <p class="eyebrow green"><i></i>Ready when you are</p>
-            <h2>Get in the<br /><em>game.</em></h2>
+      <section class="section why" id="why-us">
+        <div class="container why-layout">
+          <div class="why-copy reveal">
+            <p class="eyebrow light">Why Sonu Electronics</p>
+            <h2>Service that feels <span>refreshingly simple.</span></h2>
             <p>
-              Want the latest timings and prices? Start an enquiry directly with
-              the team — no account needed.
+              Professional work, clear communication and lasting repairs. No
+              chasing technicians. No surprise bills.
             </p>
-          </div>
-          <div class="booking-panel">
-            <p class="availability">BOOKING ENQUIRY</p>
-            <h3>Let's find your slot.</h3>
-            <p id="pricing-copy">
-              Contact us for pricing and available timings.
-            </p>
-            <a class="button whatsapp-link" href="#"
-              >WhatsApp Us <span>↗</span></a
-            ><a class="call-link phone-link" href="#"
-              >or call <span data-phone>[YOUR PHONE NUMBER]</span> →</a
+            <a class="text-link" href="#contact"
+              >Schedule a service <span>→</span></a
             >
           </div>
-        </div>
-      </section>
-
-      <section class="location section container" id="location">
-        <div class="location-card">
-          <div>
-            <p class="eyebrow green"><i></i>Come play</p>
-            <h2>Find your<br />home ground.</h2>
-            <address>
-              <strong data-business-name>TurfX Arena</strong
-              ><span data-address>[YOUR TURF ADDRESS, CITY]</span
-              ><span
-                ><b>Hours</b>
-                <span data-hours>[OPENING AND CLOSING HOURS]</span></span
-              >
-            </address>
-            <a class="text-link directions-link" href="#"
-              >Open in Google Maps <span>↗</span></a
-            >
-          </div>
-          <div class="map-art" aria-hidden="true">
-            <span>YOUR<br />TURF</span><i class="pin">●</i>
-          </div>
-        </div>
-      </section>
-
-      <section class="faq section container">
-        <div class="faq-layout">
-          <div>
-            <p class="eyebrow green"><i></i>Need to know</p>
-            <h2>Questions,<br />answered.</h2>
-          </div>
-          <div class="accordion">
-            <details open>
-              <summary>How do I book a turf slot?<span>+</span></summary>
-              <p>
-                Use the WhatsApp button or call us to enquire. A booking is
-                confirmed only after the team confirms it with you.
-              </p>
-            </details>
-            <details>
-              <summary>What are the available timings?<span>+</span></summary>
-              <p>Please contact us for the current timings and availability.</p>
-            </details>
-            <details>
-              <summary>How much does a booking cost?<span>+</span></summary>
-              <p>
-                Contact us for current pricing and any applicable booking
-                conditions.
-              </p>
-            </details>
-            <details>
-              <summary>Can I book for a group or team?<span>+</span></summary>
-              <p>
-                Let us know your requirement on WhatsApp or phone and the team
-                can guide you.
-              </p>
-            </details>
+          <div class="benefits-grid">
+            <article class="benefit reveal">
+              <span>✓</span>
+              <h3>Verified Technicians</h3>
+              <p>Skilled, background-verified professionals.</p>
+            </article>
+            <article class="benefit reveal">
+              <span>⌂</span>
+              <h3>Doorstep Service</h3>
+              <p>We come to you at your preferred time.</p>
+            </article>
+            <article class="benefit reveal">
+              <span>₹</span>
+              <h3>Affordable Pricing</h3>
+              <p>Upfront estimates with no hidden fees.</p>
+            </article>
+            <article class="benefit reveal">
+              <span>🛡</span>
+              <h3>Repair Warranty</h3>
+              <p>Up to 90-day warranty on eligible work.</p>
+            </article>
+            <article class="benefit reveal">
+              <span>◆</span>
+              <h3>Original Spare Parts</h3>
+              <p>Quality-tested parts for reliable results.</p>
+            </article>
+            <article class="benefit reveal">
+              <span>ϟ</span>
+              <h3>Fast Response</h3>
+              <p>Same-day slots across the service area.</p>
+            </article>
+            <article class="benefit reveal">
+              <span>◷</span>
+              <h3>24×7 Support</h3>
+              <p>Help whenever an appliance lets you down.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="final-cta">
+      <section class="section process">
         <div class="container">
-          <p class="eyebrow">
-            <i></i><span data-city>[YOUR CITY / NEIGHBOURHOOD]</span>
-          </p>
-          <h2>Your next match<br />starts <em>here.</em></h2>
-          <div class="hero-actions">
-            <a class="button whatsapp-link" href="#"
-              >Book Your Slot <span>↗</span></a
-            ><a class="text-link phone-link" href="#">Call Us <span>→</span></a>
+          <div class="center-head reveal">
+            <p class="eyebrow">How it works</p>
+            <h2>Fixed in four <span>simple steps</span></h2>
+            <p>Book in a minute. We handle everything after that.</p>
           </div>
+          <div class="process-grid">
+            <article class="process-step reveal">
+              <span class="step-num">01</span>
+              <div class="step-icon">▣</div>
+              <h3>Book Service</h3>
+              <p>Call, WhatsApp or send the quick form.</p>
+            </article>
+            <article class="process-step reveal">
+              <span class="step-num">02</span>
+              <div class="step-icon">♟</div>
+              <h3>Technician Visit</h3>
+              <p>A verified expert arrives at your home.</p>
+            </article>
+            <article class="process-step reveal">
+              <span class="step-num">03</span>
+              <div class="step-icon">⌕</div>
+              <h3>Expert Repair</h3>
+              <p>Approve the quote and we fix the issue.</p>
+            </article>
+            <article class="process-step reveal">
+              <span class="step-num">04</span>
+              <div class="step-icon">✓</div>
+              <h3>Easy Payment</h3>
+              <p>Pay securely after the job is complete.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about">
+        <div class="container about-card reveal">
+          <div>
+            <p class="eyebrow light">Built on trust</p>
+            <h2>
+              Repairing appliances.<br /><span>Restoring peace of mind.</span>
+            </h2>
+            <p>
+              For over a decade, Sonu Electronics has helped families keep their
+              homes running smoothly. We combine hands-on expertise with modern
+              diagnostics and genuine care.
+            </p>
+            <a href="#contact" class="btn btn-light"
+              >Meet your service team <span>→</span></a
+            >
+          </div>
+          <div class="stats">
+            <div>
+              <strong class="counter" data-target="10" data-suffix="+">0</strong
+              ><span>Years of experience</span>
+            </div>
+            <div>
+              <strong class="counter" data-target="5000" data-suffix="+"
+                >0</strong
+              ><span>Happy customers</span>
+            </div>
+            <div>
+              <strong class="counter" data-target="10000" data-suffix="+"
+                >0</strong
+              ><span>Repairs completed</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials" id="reviews">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <p class="eyebrow">Customer stories</p>
+              <h2>Loved in homes <span>across the city.</span></h2>
+            </div>
+            <div class="slider-controls">
+              <button id="prevReview" aria-label="Previous review">←</button
+              ><button id="nextReview" aria-label="Next review">→</button>
+            </div>
+          </div>
+          <div class="testimonial-window reveal">
+            <div class="testimonial-track" id="testimonialTrack">
+              <article class="testimonial">
+                <div class="quote">“</div>
+                <div class="stars">★★★★★</div>
+                <p>
+                  My TV had no display and they fixed it the same evening. The
+                  technician explained everything clearly and the pricing was
+                  fair.
+                </p>
+                <div class="customer">
+                  <div class="avatar">AS</div>
+                  <div>
+                    <strong>Amit Sharma</strong><span>LED TV Repair</span>
+                  </div>
+                  <b>✓ Verified</b>
+                </div>
+              </article>
+              <article class="testimonial">
+                <div class="quote">“</div>
+                <div class="stars">★★★★★</div>
+                <p>
+                  Quick AC service, clean work and no unnecessary upselling.
+                  Cooling is perfect now. I will definitely call them again.
+                </p>
+                <div class="customer">
+                  <div class="avatar gold">PK</div>
+                  <div>
+                    <strong>Priya Kapoor</strong><span>AC Service</span>
+                  </div>
+                  <b>✓ Verified</b>
+                </div>
+              </article>
+              <article class="testimonial">
+                <div class="quote">“</div>
+                <div class="stars">★★★★★</div>
+                <p>
+                  Our washing machine stopped mid-cycle. Sonu Electronics
+                  visited on time, carried the spare and repaired it in one
+                  visit.
+                </p>
+                <div class="customer">
+                  <div class="avatar green">RV</div>
+                  <div>
+                    <strong>Rahul Verma</strong
+                    ><span>Washing Machine Repair</span>
+                  </div>
+                  <b>✓ Verified</b>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="slider-dots" id="sliderDots" aria-label="Review slides">
+            <button class="active" aria-label="Show review 1"></button
+            ><button aria-label="Show review 2"></button
+            ><button aria-label="Show review 3"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="container faq-layout">
+          <div class="faq-intro reveal">
+            <p class="eyebrow">Common questions</p>
+            <h2>Good to know <span>before we visit.</span></h2>
+            <p>Still have a question? Our team is one quick call away.</p>
+            <a href="tel:+919876543210" class="text-link"
+              >Talk to an expert →</a
+            >
+          </div>
+          <div class="accordion reveal">
+            <article class="faq-item open">
+              <button aria-expanded="true">
+                <span>How quickly do you visit?</span><b>−</b>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We usually reach you within 30–60 minutes, depending on your
+                  location and technician availability. Same-day slots are
+                  available for most bookings.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button aria-expanded="false">
+                <span>Do you provide warranty?</span><b>+</b>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. Eligible repairs include a service warranty of up to 90
+                  days. Your technician will confirm the exact coverage before
+                  work begins.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button aria-expanded="false">
+                <span>Do you repair all brands?</span><b>+</b>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We service all major Indian and international appliance
+                  brands, subject to spare-part availability.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button aria-expanded="false">
+                <span>Do you provide doorstep service?</span><b>+</b>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, our technicians diagnose and complete most repairs at
+                  your home. Workshop repairs are discussed with you in advance.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact-shell reveal">
+          <div class="contact-copy">
+            <p class="eyebrow light">We're ready when you are</p>
+            <h2>Let’s get your appliance <span>working again.</span></h2>
+            <p>
+              Tell us what went wrong. Our service advisor will confirm your
+              slot shortly.
+            </p>
+            <div class="contact-list">
+              <a href="tel:+919876543210"
+                ><span>☎</span>
+                <div>
+                  <small>Call us</small><strong>+91 98765 43210</strong>
+                </div></a
+              ><a
+                href="https://wa.me/919876543210"
+                target="_blank"
+                rel="noopener"
+                ><span>◉</span>
+                <div>
+                  <small>WhatsApp</small><strong>Chat with our team</strong>
+                </div></a
+              ><a href="mailto:service@sonuelectronics.in"
+                ><span>✉</span>
+                <div>
+                  <small>Email</small
+                  ><strong>service@sonuelectronics.in</strong>
+                </div></a
+              >
+              <div>
+                <span>⌖</span>
+                <div>
+                  <small>Service area</small
+                  ><strong>Your City & nearby areas</strong>
+                </div>
+              </div>
+              <div>
+                <span>◷</span>
+                <div>
+                  <small>Working hours</small
+                  ><strong>Daily, 8:00 AM – 9:00 PM</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="booking-form" id="bookingForm">
+            <p>Quick booking</p>
+            <h3>Request a technician</h3>
+            <label for="name">Your name</label
+            ><input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            /><label for="phone">Phone number</label
+            ><input
+              id="phone"
+              name="phone"
+              type="tel"
+              inputmode="tel"
+              placeholder="+91 98765 43210"
+              required
+            /><label for="service">Service needed</label
+            ><select id="service" name="service" required>
+              <option value="">Choose an appliance</option>
+              <option>LED / Smart TV</option>
+              <option>Air Conditioner</option>
+              <option>Refrigerator</option>
+              <option>Washing Machine</option>
+              <option>Microwave</option>
+              <option>RO / Geyser</option>
+              <option>Electrical / Wiring</option>
+              <option>Other</option></select
+            ><button class="btn btn-primary" type="submit">
+              Book My Service <span>→</span></button
+            ><small
+              >By booking, you agree to be contacted about your service.</small
+            >
+          </form>
+        </div>
+        <div
+          class="container map-placeholder"
+          role="img"
+          aria-label="Map placeholder showing service area"
+        >
+          <span>⌖</span><strong>Serving homes across Your City</strong
+          ><small>Update this block with your Google Maps embed</small>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container footer-inner">
-        <a class="brand" href="#home"
-          ><span class="brand-mark">TX</span
-          ><span data-business-name>[YOUR TURF NAME]</span></a
-        >
+
+    <footer class="footer">
+      <div class="container footer-grid">
         <div>
-          <p data-address>[YOUR TURF ADDRESS, CITY]</p>
-          <a class="phone-link" href="#" data-phone>[YOUR PHONE NUMBER]</a>
+          <a class="logo footer-logo" href="#home"
+            ><span class="logo-mark">S</span
+            ><span>Sonu <strong>Electronics</strong></span></a
+          >
+          <p>
+            Your trusted home electronics service partner. Expert repairs, right
+            at your doorstep.
+          </p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook">f</a
+            ><a href="#" aria-label="Instagram">◎</a
+            ><a href="#" aria-label="YouTube">▶</a>
+          </div>
         </div>
-        <p>
-          © <span id="year"></span>
-          <span data-business-name>[YOUR TURF NAME]</span>. All rights reserved.
-        </p>
+        <div>
+          <h3>Quick links</h3>
+          <a href="#home">Home</a><a href="#services">Services</a
+          ><a href="#why-us">Why choose us</a><a href="#reviews">Reviews</a>
+        </div>
+        <div>
+          <h3>Popular services</h3>
+          <a href="#services">TV Repair</a><a href="#services">AC Service</a
+          ><a href="#services">Refrigerator Repair</a
+          ><a href="#services">Washing Machine Repair</a>
+        </div>
+        <div>
+          <h3>Need help now?</h3>
+          <a class="footer-phone" href="tel:+910000000000">☎ +91 98765 43210</a>
+          <p>Available daily<br />8:00 AM – 9:00 PM</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Sonu Electronics. All rights reserved.</p>
+        <div>
+          <a href="#">Privacy Policy</a><a href="#">Terms of Service</a>
+        </div>
       </div>
     </footer>
-    <div class="mobile-bar">
-      <a class="phone-link" href="#">Call</a
-      ><a class="whatsapp-link" href="#">WhatsApp <span>↗</span></a>
-    </div>
 
     <div
       class="promo-overlay"
@@ -293,10 +777,10 @@ function gtag_report_conversion(url) {
           ×</button
         ><a
           class="promo-banner-link"
-          href="#"
-           onclick="
+          href="https://wa.me/7667368281?text=Hi,%20I%20want%20Id."
+          onclick="
             return gtag_report_conversion(
-              'https://wa.me/9835307159?text=Hi,%20I%20want%20Id.'
+              'https://wa.me/7667368281?text=Hi,%20I%20want%20Id.'
             );
           "
           id="promoBook"
@@ -304,13 +788,25 @@ function gtag_report_conversion(url) {
           rel="noopener"
           aria-label="Open WhatsApp offer"
           ><img
-             class="popup-image"
-            src="assets/popup.webp"
-            alt="Special turf booking offer. Tap to contact us on WhatsApp."
+            src="assets/images/banner123.png"
+            alt="Sonu Electronics WhatsApp offer banner"
+            width="941"
+            height="1672"
         /></a>
       </div>
     </div>
-    <script src="config.js"></script>
-    <script src="script.js"></script>
+
+    <a
+      class="floating-btn whatsapp-float"
+      href="https://wa.me/7667368281?text=Hi,%20I%20want%20Id."
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+      >◉<span>WhatsApp</span></a
+    >
+    <div class="toast" id="toast" role="status" aria-live="polite">
+      ✓ Thanks! Opening WhatsApp to confirm your booking.
+    </div>
+    <script src="script.js" defer></script>
   </body>
 </html>
