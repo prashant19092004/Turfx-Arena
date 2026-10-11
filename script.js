@@ -4,7 +4,7 @@ const $ = (selector, scope = document) => scope.querySelector(selector);
 const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
 
 // Loading screen and persistent interface behavior.
-window.addEventListener("load", () => setTimeout(() => $("#loader").classList.add("hidden"), 350));
+window.addEventListener("load", () => setTimeout(() => $("#loader").classList.add("hidden"), 10));
 $("#year").textContent = new Date().getFullYear();
 
 const header = $("#siteHeader");
